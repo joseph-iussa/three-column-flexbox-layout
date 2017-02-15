@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex test</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            overflow-y: hidden;
+        }
+
+        header,
+        footer {
+            flex: 0 0 50px;
+            background-color: lightgreen;
+        }
+
+        #content {
+            display: flex;
+            background-color: lightskyblue;
+            overflow-y: hidden;
+        }
+
+        #content > * {
+            flex: 1 1 auto;
+            overflow-y: auto;
+        }
+
+        #content > .vertical-no-scroll {
+            display: flex;
+            flex-direction: column;
+            overflow-y: hidden;
+        }
+
+        .vertical-scroll {
+            overflow-y: auto;
+        }
+
+        #content > #left {
+            flex: 1 1 15%;
+        }
+
+        #content > #middle {
+            flex: 1 1 40%;
+        }
+
+        #content > #right {
+            flex: 1 1 45%;
+        }
+
+        #content > section:nth-child(1) {
+            background-color: #eeeeee;
+        }
+
+        #content > section:nth-child(2) {
+            background-color: #dddddd;
+        }
+
+        #content > section:nth-child(3) {
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quibusdam officiis aspernatur omnis molestiae vero
+        officia sunt assumenda tempore, quae laboriosam nisi sequi eligendi animi, repellat, tempora debitis quo repudiandae.
+    </header>
+    <div id="content">
+        <section id='left' class="vertical-no-scroll">
+            <h1>Left</h1>
+            <div class="vertical-scroll">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+            </div>
+        </section>
+        <section id="middle" class="vertical-no-scroll">
+            <h1>Middle</h1>
+            <div class="vertical-scroll">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde
+                    cum quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus
+                    aliquid libero.
+                </p>
+                <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur
+                    voluptate labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae
+                    adipisci ab.
+                </p>
+                <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                    nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+            </div>
+        </section>
+        <section id='right'>
+            <h1>Right</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde cum
+                quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus aliquid
+                libero.
+            </p>
+            <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur voluptate
+                labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae adipisci
+                ab.
+            </p>
+            <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde cum
+                quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus aliquid
+                libero.
+            </p>
+            <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur voluptate
+                labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae adipisci
+                ab.
+            </p>
+            <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde cum
+                quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus aliquid
+                libero.
+            </p>
+            <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur voluptate
+                labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae adipisci
+                ab.
+            </p>
+            <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eveniet dolorum ullam vitae unde cum
+                quasi, eos, tempora perferendis amet, quos! Doloremque laborum quis praesentium, laboriosam repellendus aliquid
+                libero.
+            </p>
+            <p>Eveniet quis adipisci libero tempora est eaque, odio! Cum inventore, doloribus suscipit saepe consequuntur voluptate
+                labore iste quaerat aliquid velit quia nisi harum eveniet debitis similique! Veniam repudiandae adipisci
+                ab.
+            </p>
+            <p>Sit, voluptas in aliquam molestiae ab laudantium minima iste dolores. Incidunt eum, beatae quis labore impedit
+                nisi. Tempore veritatis earum omnis inventore fugiat, recusandae qui, accusamus, ea dolore in asperiores!</p>
+        </section>
+    </div>
+    <footer>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sit architecto hic, temporibus possimus nihil facere
+        aliquid debitis ut praesentium rem beatae illo, mollitia, aspernatur voluptate! Odit, rerum quam error?</footer>
+</body>
+
+</html>
